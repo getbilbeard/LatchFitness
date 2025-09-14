@@ -1,4 +1,4 @@
-//
+// SwiftUI App entry point that shows RootTabView, light mode default
 //  LatchFitnessApp.swift
 //  LatchFitness
 //
@@ -11,7 +11,8 @@ import SwiftUI
 struct LatchFitnessApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootTabView()
+                .preferredColorScheme(.light)
         }
     }
 }
